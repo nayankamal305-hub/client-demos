@@ -1,6 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kirti's Maths, Stat & Commerce Classes (DEMO)</title>
-<style>body{font-family:system-ui,sans-serif;margin:0;color:#1b2430}header{background:#1d4ed8;color:#fff;padding:2rem 1rem;text-align:center}section{max-width:760px;margin:auto;padding:1.5rem 1rem}.card{border:1px solid #dbe3ee;border-radius:10px;padding:1rem;margin:.6rem 0}a.btn{display:inline-block;background:#16a34a;color:#fff;padding:.8rem 1.2rem;border-radius:8px;text-decoration:none;margin:.3rem}.demo{background:#fff7d6;text-align:center;padding:.4rem;font-size:.9rem}footer{text-align:center;color:#667;padding:1.5rem;font-size:.85rem}</style></head><body>
-<div class="demo">Sample page made as a free idea. Not the official website of Kirti's Maths, Stat & Commerce Classes. Content is based on public Google listing info and can be changed.</div>
-<header><h1>Kirti's Maths, Stat & Commerce Classes</h1><p>Maths, Statistics and Commerce classes | Karve Nagar, Pune</p><a class="btn" href="tel:+919890991249">Call now</a><a class="btn" href="https://wa.me/919890991249">WhatsApp</a></header>
-<section><h2>Subjects</h2><div class="card">Maths</div><div class="card">Statistics</div><div class="card">Commerce</div></section><section><h2>About</h2><div class="card">Add your teaching approach, batch timings and results here.</div></section>
-<section><h2>Find us</h2><div class="card">Karve Nagar, Pune. Add exact address and map.</div></section><footer>Demo by Kamal Nayan, web developer.</footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kirti&#x27;s Maths, Stat &amp; Commerce Classes (DEMO)</title><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#6d28d9;--p2:#2563eb;--ink:#12212e;--mut:#5b6b7a;--bg:#f6f8fb;--card:#fff;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:72px}
+a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:#101820;color:#ffd75e;font-size:12.5px;text-align:center;padding:8px 14px;line-height:1.4}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #e4e9ef}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:17px;display:flex;align-items:center;gap:10px;max-width:60%}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--p2));display:grid;place-items:center;color:#fff;font-style:normal;font-size:16px;flex:none}
+.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav a{margin-left:22px;font-weight:600;font-size:14px;color:var(--mut)}nav{display:none}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:.2s}
+.b1{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 10px 24px -8px var(--p)}.b1:hover{transform:translateY(-2px)}
+.b2{background:#fff;color:var(--p);border:2px solid var(--p)}.b3{background:#25d366;color:#fff}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,var(--p2) 0,transparent 60%),linear-gradient(160deg,var(--p) 0,#0b1b2b 120%);color:#fff;padding:54px 0 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-80px;bottom:-80px;width:320px;height:320px;border-radius:50%;border:48px solid rgba(255,255,255,.07)}
+.chip{display:inline-block;background:rgba(255,255,255,.16);padding:6px 14px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:16px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.02em;max-width:720px}
+.hero p{font-size:clamp(16px,2.4vw,19px);opacity:.92;max-width:600px;margin:16px 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.hero .b2{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.5)}
+.stats{margin-top:-34px;position:relative;z-index:5}
+.sg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.s{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 12px 30px -16px rgba(16,32,48,.3);text-align:center}
+.s b{display:block;font-size:24px;color:var(--p);font-weight:800}.s small{color:var(--mut);font-size:12.5px}
+section{padding:60px 0}h2{font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.01em;margin-bottom:8px}.sub{color:var(--mut);margin-bottom:28px;max-width:620px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:var(--card);border-radius:var(--r);padding:24px;border:1px solid #e6ebf1;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -20px rgba(16,32,48,.35)}
+.ico{width:50px;height:50px;border-radius:14px;background:color-mix(in srgb,var(--p) 12%,#fff);color:var(--p);display:grid;place-items:center;margin-bottom:14px}
+.card h3{font-size:17px;margin-bottom:6px}.card p{color:var(--mut);font-size:14.5px}
+.steps{counter-reset:s}.step{position:relative;padding-left:58px;margin-bottom:22px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h3{font-size:17px}.step p{color:var(--mut);font-size:14.5px}
+.alt{background:#fff;border-top:1px solid #e6ebf1;border-bottom:1px solid #e6ebf1}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+.g{aspect-ratio:4/3;border-radius:16px;display:grid;place-items:center;text-align:center;font-size:12.5px;color:#fff;font-weight:600;padding:10px;background:linear-gradient(135deg,var(--p),var(--p2));opacity:.92}
+.g:nth-child(2n){background:linear-gradient(135deg,var(--p2),#0b1b2b)}.g:nth-child(3n){background:linear-gradient(135deg,#0b1b2b,var(--p))}
+.rev{position:relative}.tag{display:inline-block;background:#fff3cd;color:#7a5b00;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:10px}
+.stars{color:#f5a623;letter-spacing:2px;margin-bottom:6px}
+details{background:var(--card);border:1px solid #e6ebf1;border-radius:14px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}summary:after{content:"+";font-size:20px;color:var(--p)}details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:10px;font-size:14.5px}
+.contact{display:grid;gap:20px}.form{background:var(--card);border-radius:var(--r);padding:24px;border:1px solid #e6ebf1}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #d7dee6;border-radius:12px;font:inherit;margin-bottom:12px;background:#fff}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--p)}
+.info p{margin-bottom:12px;display:flex;gap:12px;align-items:flex-start;color:var(--mut)}.info svg{color:var(--p);flex:none;margin-top:2px}
+footer{background:#0b1b2b;color:#b9c6d3;padding:34px 0;font-size:13px}footer b{color:#fff}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 14px;background:#fff;border-top:1px solid #e1e7ee;z-index:30}
+.bar a{flex:1;justify-content:center;padding:13px}
+@media(min-width:760px){nav{display:block}.sg{grid-template-columns:repeat(4,1fr)}.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c2{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(3,1fr)}.contact{grid-template-columns:1fr 1fr}.bar{display:none}body{padding-bottom:0}.hero{padding:84px 0 100px}}
+</style></head><body>
+<div class="demo">Sample page made as a free idea. Not the official website of Kirti&#x27;s Maths, Stat &amp; Commerce Classes. Built from public Google listing info; sample text is marked and can be changed.</div>
+<header><div class="wrap nav"><a class="logo" href="#top"><i>K</i><span>Kirti&#x27;s Maths, Stat &amp; Commerce Classes</span></a>
+<nav><a href="#services">Classes &amp; Subjects</a><a href="#how">How it works</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+<a class="btn b1" href="tel:+919890991249">Call now</a></div></header>
+<main id="top"><section class="hero"><div class="wrap"><span class="chip">Maths | Statistics | Commerce</span>
+<h1>Clear concepts in Maths, Statistics and Commerce.</h1><p>Classes in Karve Nagar, Pune. Message us to ask about batches and book a demo class.</p>
+<div class="cta"><a class="btn b1" style="background:#fff;color:var(--p)" href="https://wa.me/919890991249?text=Hello%2C%20I%20would%20like%20to%20know%20about%20classes%20at%20Kirti%27s%20Maths%2C%20Stat%20%26%20Commerce%20Classes.">WhatsApp us</a><a class="btn b2" href="tel:+919890991249">Call now</a></div></div></section>
+<div class="wrap stats"><div class="sg"><div class="s"><b>5.0 ★ (136)</b><small>Google rating (public listing)</small></div><div class="s"><b>Add</b><small>Years of teaching</small></div><div class="s"><b>Add</b><small>Students taught</small></div><div class="s"><b>Add</b><small>Batch sizes</small></div></div></div>
+<section id="services"><div class="wrap"><h2>Classes &amp; Subjects</h2><p class="sub">What we teach. Edit this list to match your batches.</p><div class="grid c3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M12 12h2M16 12h0M8 16h2M12 16h2"/></svg></div><h3>Maths</h3><p>Concept-based lessons with regular practice. (Edit to match your teaching.)</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V6M4 20h16M8 16v-5M12 16V8M16 16v-3"/></svg></div><h3>Statistics</h3><p>Step-by-step problem solving. (Edit to match.)</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zM8 7h7M8 11h7"/></svg></div><h3>Commerce</h3><p>Accounts and commerce subjects. (Edit to match.)</p></div></div></div></section>
+<section class="alt" id="how"><div class="wrap"><h2>How it works</h2><p class="sub">Simple steps for parents and students.</p><div class="steps"><div class="step"><h3>Message or call us</h3><p>Tell us the class and subject you are looking at.</p></div><div class="step"><h3>Meet the teacher</h3><p>Ask about batches, timings and fees. (Add your details.)</p></div><div class="step"><h3>Start learning</h3><p>Join a batch and track progress with regular updates.</p></div></div></div></section>
+<section id="gallery"><div class="wrap"><h2>Classroom and results</h2><p class="sub">Sample tiles. Replace with your real photos.</p><div class="gal"><div class="g">Your photo here<br>Classroom</div><div class="g">Your photo here<br>Notes</div><div class="g">Your photo here<br>Toppers wall</div><div class="g">Your photo here<br>Events</div><div class="g">Your photo here<br>Doubt sessions</div><div class="g">Your photo here<br>Test series</div></div></div></section>
+<section class="alt"><div class="wrap"><h2>What customers say</h2><p class="sub">Sample layout only. Real reviews from your Google profile go here.</p><div class="grid c3"><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: clear explanations and friendly, patient teaching.</p></div><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: easy to reach, quick replies, and well organised.</p></div><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: would recommend to friends and family.</p></div></div></div></section>
+<section id="faq"><div class="wrap"><h2>Common questions</h2><p class="sub">Sample answers. Replace with your own details.</p><details><summary>What are the batch timings?</summary><p>Add your batch timings here.</p></details><details><summary>How do I book a demo class?</summary><p>Message us on WhatsApp or call, and we will confirm a slot. (Edit as needed.)</p></details><details><summary>What are the fees?</summary><p>Add your fee details here.</p></details></div></section>
+<section class="alt" id="contact"><div class="wrap"><h2>Book a demo class</h2><p class="sub">Send a message on WhatsApp and we will get back to you.</p><div class="contact">
+<form class="form" onsubmit="return go(event)"><input id="n" placeholder="Your name" required><input id="t" placeholder="Phone number"><select id="s"><option>Maths</option><option>Statistics</option><option>Commerce</option><option>Not sure yet</option></select><textarea id="m" rows="3" placeholder="Anything we should know?"></textarea><button class="btn b1" style="width:100%;justify-content:center">Send on WhatsApp</button></form>
+<div class="info"><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Area:</b> Karve Nagar, Pune<br><a style="color:var(--p);font-weight:700" target="_blank" rel="noopener" href="https://www.google.com/maps/search/Kirti%27s%20Maths%2C%20Stat%20%26%20Commerce%20Classes%20Karve%20Nagar%2C%20Pune">Open in Google Maps</a></span></p><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><b>Phone:</b> +91 98909 91249</span></p><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Hours:</b> Add your hours here (not verified)</span></p></div></div></div></section></main>
+<footer><div class="wrap"><b>Kirti&#x27;s Maths, Stat &amp; Commerce Classes</b><br>Demo concept by Kamal Nayan, web developer. This is not the official website and does not represent the business. Rating shown comes from the public Google listing as of Nov 2026.</div></footer>
+<div class="bar"><a class="btn b1" href="tel:+919890991249">Call now</a><a class="btn b3" href="https://wa.me/919890991249?text=Hello%2C%20I%20would%20like%20to%20know%20about%20classes%20at%20Kirti%27s%20Maths%2C%20Stat%20%26%20Commerce%20Classes.">WhatsApp</a></div>
+<script>function go(e){e.preventDefault();var m="Hello, I am "+n.value+". Interested in: "+s.value+". "+(t.value?"Phone: "+t.value+". ":"")+m.value;location.href="https://wa.me/919890991249?text="+encodeURIComponent(m);return false}</script>
+</body></html>

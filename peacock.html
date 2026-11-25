@@ -1,6 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Peacock Plumbing (DEMO)</title>
-<style>body{font-family:system-ui,sans-serif;margin:0;color:#1b2430}header{background:#1d4ed8;color:#fff;padding:2rem 1rem;text-align:center}section{max-width:760px;margin:auto;padding:1.5rem 1rem}.card{border:1px solid #dbe3ee;border-radius:10px;padding:1rem;margin:.6rem 0}a.btn{display:inline-block;background:#16a34a;color:#fff;padding:.8rem 1.2rem;border-radius:8px;text-decoration:none;margin:.3rem}.demo{background:#fff7d6;text-align:center;padding:.4rem;font-size:.9rem}footer{text-align:center;color:#667;padding:1.5rem;font-size:.85rem}</style></head><body>
-<div class="demo">Sample page made as a free idea. Not the official website of Peacock Plumbing. Content is based on public Google listing info and can be changed.</div>
-<header><h1>Peacock Plumbing</h1><p>Plumbing service | Toledo / Sylvania, Ohio</p><a class="btn" href="tel:+14193434831">Call (419) 343-4831</a></header>
-<section><h2>Services</h2><div class="card">Repairs and replacements</div><div class="card">Estimates</div></section><section><h2>About</h2><div class="card">Add your services, service area and owner story here.</div></section>
-<section><h2>Find us</h2><div class="card">Toledo and Sylvania, OH. Add service area.</div></section><footer>Demo by Kamal Nayan, web developer.</footer></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peacock Plumbing (DEMO)</title><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--p:#0b5cad;--p2:#12b5cb;--ink:#12212e;--mut:#5b6b7a;--bg:#f6f8fb;--card:#fff;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;padding-bottom:72px}
+a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.demo{background:#101820;color:#ffd75e;font-size:12.5px;text-align:center;padding:8px 14px;line-height:1.4}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #e4e9ef}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:17px;display:flex;align-items:center;gap:10px;max-width:60%}
+.logo i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--p2));display:grid;place-items:center;color:#fff;font-style:normal;font-size:16px;flex:none}
+.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav a{margin-left:22px;font-weight:600;font-size:14px;color:var(--mut)}nav{display:none}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:.2s}
+.b1{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;box-shadow:0 10px 24px -8px var(--p)}.b1:hover{transform:translateY(-2px)}
+.b2{background:#fff;color:var(--p);border:2px solid var(--p)}.b3{background:#25d366;color:#fff}
+.hero{background:radial-gradient(1200px 500px at 85% -10%,var(--p2) 0,transparent 60%),linear-gradient(160deg,var(--p) 0,#0b1b2b 120%);color:#fff;padding:54px 0 70px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-80px;bottom:-80px;width:320px;height:320px;border-radius:50%;border:48px solid rgba(255,255,255,.07)}
+.chip{display:inline-block;background:rgba(255,255,255,.16);padding:6px 14px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:16px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.12;font-weight:800;letter-spacing:-.02em;max-width:720px}
+.hero p{font-size:clamp(16px,2.4vw,19px);opacity:.92;max-width:600px;margin:16px 0 26px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.hero .b2{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.5)}
+.stats{margin-top:-34px;position:relative;z-index:5}
+.sg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.s{background:var(--card);border-radius:var(--r);padding:18px;box-shadow:0 12px 30px -16px rgba(16,32,48,.3);text-align:center}
+.s b{display:block;font-size:24px;color:var(--p);font-weight:800}.s small{color:var(--mut);font-size:12.5px}
+section{padding:60px 0}h2{font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.01em;margin-bottom:8px}.sub{color:var(--mut);margin-bottom:28px;max-width:620px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:var(--card);border-radius:var(--r);padding:24px;border:1px solid #e6ebf1;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -20px rgba(16,32,48,.35)}
+.ico{width:50px;height:50px;border-radius:14px;background:color-mix(in srgb,var(--p) 12%,#fff);color:var(--p);display:grid;place-items:center;margin-bottom:14px}
+.card h3{font-size:17px;margin-bottom:6px}.card p{color:var(--mut);font-size:14.5px}
+.steps{counter-reset:s}.step{position:relative;padding-left:58px;margin-bottom:22px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--p);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h3{font-size:17px}.step p{color:var(--mut);font-size:14.5px}
+.alt{background:#fff;border-top:1px solid #e6ebf1;border-bottom:1px solid #e6ebf1}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+.g{aspect-ratio:4/3;border-radius:16px;display:grid;place-items:center;text-align:center;font-size:12.5px;color:#fff;font-weight:600;padding:10px;background:linear-gradient(135deg,var(--p),var(--p2));opacity:.92}
+.g:nth-child(2n){background:linear-gradient(135deg,var(--p2),#0b1b2b)}.g:nth-child(3n){background:linear-gradient(135deg,#0b1b2b,var(--p))}
+.rev{position:relative}.tag{display:inline-block;background:#fff3cd;color:#7a5b00;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;margin-bottom:10px}
+.stars{color:#f5a623;letter-spacing:2px;margin-bottom:6px}
+details{background:var(--card);border:1px solid #e6ebf1;border-radius:14px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}summary:after{content:"+";font-size:20px;color:var(--p)}details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:10px;font-size:14.5px}
+.contact{display:grid;gap:20px}.form{background:var(--card);border-radius:var(--r);padding:24px;border:1px solid #e6ebf1}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #d7dee6;border-radius:12px;font:inherit;margin-bottom:12px;background:#fff}
+input:focus,textarea:focus,select:focus{outline:0;border-color:var(--p)}
+.info p{margin-bottom:12px;display:flex;gap:12px;align-items:flex-start;color:var(--mut)}.info svg{color:var(--p);flex:none;margin-top:2px}
+footer{background:#0b1b2b;color:#b9c6d3;padding:34px 0;font-size:13px}footer b{color:#fff}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 14px;background:#fff;border-top:1px solid #e1e7ee;z-index:30}
+.bar a{flex:1;justify-content:center;padding:13px}
+@media(min-width:760px){nav{display:block}.sg{grid-template-columns:repeat(4,1fr)}.grid.c3{grid-template-columns:repeat(3,1fr)}.grid.c2{grid-template-columns:repeat(2,1fr)}.gal{grid-template-columns:repeat(3,1fr)}.contact{grid-template-columns:1fr 1fr}.bar{display:none}body{padding-bottom:0}.hero{padding:84px 0 100px}}
+</style></head><body>
+<div class="demo">Sample page made as a free idea. Not the official website of Peacock Plumbing. Built from public Google listing info; sample text is marked and can be changed.</div>
+<header><div class="wrap nav"><a class="logo" href="#top"><i>P</i><span>Peacock Plumbing</span></a>
+<nav><a href="#services">Services</a><a href="#how">How it works</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+<a class="btn b1" href="tel:+14193434831">Call now</a></div></header>
+<main id="top"><section class="hero"><div class="wrap"><span class="chip">Plumbing | Toledo and Sylvania, OH</span>
+<h1>Fast, honest plumbing help in Toledo and Sylvania.</h1><p>Leaks, clogs, water heaters and more. Call or text for an estimate.</p>
+<div class="cta"><a class="btn b1" style="background:#fff;color:var(--p)" href="sms:+14193434831">Text us</a><a class="btn b2" href="tel:+14193434831">Call now</a></div></div></section>
+<div class="wrap stats"><div class="sg"><div class="s"><b>4.9 ★ (50)</b><small>Google rating (public listing)</small></div><div class="s"><b>Add</b><small>Years in business</small></div><div class="s"><b>Add</b><small>Licence / insured info</small></div><div class="s"><b>Open 24 hrs</b><small>as listed on Google</small></div></div></div>
+<section id="services"><div class="wrap"><h2>Services</h2><p class="sub">Plumbing services. Edit this list to match what you offer.</p><div class="grid c3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Leaks &amp; repairs</h3><p>Faucets, pipes, toilets. (Edit to match.)</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6a4 4 0 0 0 5 5l-9 9a2 2 0 0 1-3-3l9-9a4 4 0 0 0-2-2z"/></svg></div><h3>Drain cleaning</h3><p>Clogs and slow drains. (Edit to match.)</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L5 14h6l-1 8 8-12h-6l1-8z"/></svg></div><h3>Water heaters</h3><p>Repair and replacement. (Edit to match.)</p></div></div></div></section>
+<section class="alt" id="how"><div class="wrap"><h2>How it works</h2><p class="sub">Simple and clear.</p><div class="steps"><div class="step"><h3>Call or text us</h3><p>Tell us what is going on.</p></div><div class="step"><h3>Get an estimate</h3><p>We explain the work and price before we start. (Edit to match your process.)</p></div><div class="step"><h3>Problem fixed</h3><p>We do the work and clean up. (Edit to match.)</p></div></div></div></section>
+<section id="gallery"><div class="wrap"><h2>Our work</h2><p class="sub">Sample tiles. Replace with your real photos.</p><div class="gal"><div class="g">Your photo here<br>Repair work</div><div class="g">Your photo here<br>Water heater</div><div class="g">Your photo here<br>Kitchen</div><div class="g">Your photo here<br>Bathroom</div><div class="g">Your photo here<br>Drains</div><div class="g">Your photo here<br>Team</div></div></div></section>
+<section class="alt"><div class="wrap"><h2>What customers say</h2><p class="sub">Sample layout only. Real reviews from your Google profile go here.</p><div class="grid c3"><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: clear explanations and friendly, patient teaching.</p></div><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: easy to reach, quick replies, and well organised.</p></div><div class="card rev"><span class="tag">SAMPLE REVIEW</span><div class="stars">★★★★★</div><p>Sample text: would recommend to friends and family.</p></div></div></div></section>
+<section id="faq"><div class="wrap"><h2>Common questions</h2><p class="sub">Sample answers. Replace with your own details.</p><details><summary>Do you offer emergency service?</summary><p>Google lists the business as open 24 hours. Confirm and add your policy here.</p></details><details><summary>Do you give estimates?</summary><p>Add your estimate policy here.</p></details><details><summary>What areas do you serve?</summary><p>Toledo and Sylvania, OH. Add the rest of your service area.</p></details></div></section>
+<section class="alt" id="contact"><div class="wrap"><h2>Request an estimate</h2><p class="sub">Send us a message. We will reply as soon as we can.</p><div class="contact">
+<form class="form" onsubmit="return go(event)"><input id="n" placeholder="Your name" required><input id="t" placeholder="Phone number"><select id="s"><option>Leak or repair</option><option>Drain clog</option><option>Water heater</option><option>Other</option></select><textarea id="m" rows="3" placeholder="Anything we should know?"></textarea><button class="btn b1" style="width:100%;justify-content:center">Send text message</button></form>
+<div class="info"><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span><b>Area:</b> Toledo / Sylvania, Ohio<br><a style="color:var(--p);font-weight:700" target="_blank" rel="noopener" href="https://www.google.com/maps/search/Peacock%20Plumbing%20Toledo%20/%20Sylvania%2C%20Ohio">Open in Google Maps</a></span></p><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span><b>Phone:</b> (419) 343-4831</span></p><p><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Hours:</b> Add your hours here (not verified)</span></p></div></div></div></section></main>
+<footer><div class="wrap"><b>Peacock Plumbing</b><br>Demo concept by Kamal Nayan, web developer. This is not the official website and does not represent the business. Rating shown comes from the public Google listing as of Nov 2026.</div></footer>
+<div class="bar"><a class="btn b1" href="tel:+14193434831">Call now</a><a class="btn b3" href="sms:+14193434831">Text us</a></div>
+<script>function go(e){e.preventDefault();var m="Hello, I am "+n.value+". Interested in: "+s.value+". "+(t.value?"Phone: "+t.value+". ":"")+m.value;location.href="sms:+14193434831?&body="+encodeURIComponent(m);return false}</script>
+</body></html>
